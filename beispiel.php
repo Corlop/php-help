@@ -9,7 +9,7 @@
 
 <?php 
 
-echo "kannst du das lesen";
+echo "kannst du das lesen?";
 
 ?>
 
