@@ -150,7 +150,7 @@ checkbox message  */
 
 if($checkCount == 0){
 	echo "<p>Chin up! Things can only get better!</p>";
-}else if($checkCount == 2){
+}else if($checkCount == 1){
 	echo "<p>Gee, that's swell</p>";
 }else if($checkCount == 2){
 	echo "<p>Glad to hear it! Keep it up!</p>";
