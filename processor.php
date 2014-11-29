@@ -107,29 +107,14 @@ $result = preg_match($studentNumberPattern, $studentNumber );
 determine checkboxes */
 
 $checkCount = 0;
-print_r($_POST);
+
 if(   isset($_POST)  ){
 	echo "<p>You are:</p>";
-	$arrayOfDescriptions = $_POST;
+	$arrayOfDescriptions = $_POST['self];
 	echo "<ul>";
-	foreach($arrayOfDescriptions as $key => $oneDescription){
-		
-		switch($key) {
-		
-		case "healty":
-		$checkCount++;
-		break;
-		case "wealthy":
-		$checkCount++;
-		break;
-		case "wise":
-		$checkCount++;
-		break;
-			
-			
-		}
-		
-		echo "<li>".$oneDescription."</li>";
+	foreach($arrayOfDescriptions as $oneDescription){
+	
+	        echo "<li>".$oneDescription."</li>";
 		$checkCount++;
 	}
 	echo "</ul>";
