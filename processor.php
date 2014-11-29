@@ -120,6 +120,23 @@ if(   isset($_POST['description'])  ){
 	echo "</ul>";
 }
 
+//ALERNATIBE SOLUTION
+
+//if(   isset($_POST['description'])  ){
+//	echo "<p>You are:</p>";
+//	$arrayOfDescriptions = $_POST['description'];
+  
+//  $array_length = count($arrayOfDescription);
+  
+//	echo "<ul>";
+//	for($i=0; $i<$array_length; $i++){
+	
+//	        echo "<li>".$_POST['description'][$i]."</li>";
+//		$checkCount = $i + 1;
+//	}
+//	echo "</ul>";
+//}
+
 
 
 
