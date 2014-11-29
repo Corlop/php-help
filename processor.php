@@ -108,18 +108,31 @@ determine checkboxes */
 
 $checkCount = 0;
 
-if(   isset($_POST['description'])  ){
+if(   isset($_POST)  ){
 	echo "<p>You are:</p>";
-	$arrayOfDescriptions = $_POST['description'];
+	$arrayOfDescriptions = $_POST;
 	echo "<ul>";
-	foreach($arrayOfDescriptions as $oneDescription){
+	foreach($arrayOfDescriptions as $key => $oneDescription){
+		
+		switch($key) {
+		
+		case "healty":
+		$checkCount++;
+		break;
+		case "wealthy":
+		$checkCount++;
+		break;
+		case "wise":
+		$checkCount++;
+		break;
+			
+			
+		}
+		
 		echo "<li>".$oneDescription."</li>";
 		$checkCount++;
 	}
 	echo "</ul>";
-}else{
-	echo "<p>You chose no description</p>";
-	die("<p><a href='index.html'>Please fill in the form</a></p>");
 }
 
 
