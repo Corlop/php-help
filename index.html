@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>PHP Assignment01 Cotellessa Daniele</title>
+	<link type="text/css" rel="stylesheet" href="styles/style.css" />
+
+
+</head>
+<body>
+<h2>An HTML Form With PHP Processing Script</h2>
+		<p>If you'd like to try filling in this form with valid credentials, you will need to use <strong>firstname: daniel</strong> and <strong>lastname: cotellessa</strong></p>
+
+
+		<form action="./processor.php" method="post">
+		<fieldset>	
+		<legend>Please complete and submit the form</legend>
+		<label for="firstname">Firstname:</label> 
+		<input	type="text" 
+				id="firstname" 
+				name="firstname"
+				size="35"
+				/><br />
+		<label for="lastname">Lastname:</label> 
+		<input	type="text" 
+				id="lastname" 
+				name="lastname"
+				size="35"
+				/>
+		<br />
+		<label for="studentnumber">Student Number:</label> 
+		<input	type="text" 
+				id="studentnumber" 
+				name="studentnumber"
+				size="35"
+				/>
+		
+		<fieldset>		
+			<legend>Gender</legend>
+			<input type="radio" name="gender" value="male" id="male" />
+			<label for="male">Male</label>
+			<br />
+			<input type="radio" name="gender" value="female" id="female" />
+			<label for="female">Female</label>
+			<br />
+		</fieldset>
+		<fieldset>		
+		<!-- 
+		NOTE the use of [] square brackets on the name attribute values
+		this allows an array to be sent to the processng script, useful
+		since there may be many checkboxes selected in a group
+		-->
+			<legend>Describe yourself (Choose all that apply)</legend>
+			<input type="checkbox" name="self[]" value="healthy" id="healthy" />
+			<label for="healthy">Healthy</label>
+			<br />
+			<input type="checkbox" name="self[]" value="wealthy" id="wealthy" />
+			<label for="wealthy">Wealthy</label>
+			<br />
+			<input type="checkbox" name="self[]" value="wise" id="wise" />
+			<label for="wise">Wise</label>
+			<br />
+		</fieldset>
+
+		<input class="btn" type="submit" value="Submit" style="float:right;" />			
+		</fieldset>	
+		</form>
+	</body>
+</html>
