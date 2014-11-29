@@ -72,7 +72,7 @@ determine if the data matches the required data */
 const FIRST_NAME = "daniel";
 const LAST_NAME  = "cotellessa";
 
-if( $firstname == FIRST_NAME && $lastname == LAST_NAME ){
+if( strtolower($firstname) == FIRST_NAME && strtolower($lastname) == LAST_NAME ){
 	echo "<p>firstname and lastname valid...</p>";
 }else{
 	echo "<p>firstname and lastname NOT valid...</p>";		
