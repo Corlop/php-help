@@ -47,7 +47,7 @@ if( isset($_POST['gender']) ){
 determine if the data has a value: ensure the user did not leave the form field blank*/
 
 
-if(trim($_POST['firstname']) && trim($_POST['lastname']) && trim($_POST['studentNumber'])){
+if(trim($_POST['firstname']) && trim($_POST['lastname']) && trim($_POST['studentnumber'])){
 	echo "<p>firstname/lastname/studentnumber has been provided!</p>";	
 }else{
 	echo "<p>firstname/lastname/studentnumber hasn't been provided!</p>";	
