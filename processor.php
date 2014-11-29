@@ -108,7 +108,7 @@ determine checkboxes */
 
 $checkCount = 0;
 
-if(   isset($_POST)  ){
+if(   isset($_POST['description'])  ){
 	echo "<p>You are:</p>";
 	$arrayOfDescriptions = $_POST['description'];
 	echo "<ul>";
