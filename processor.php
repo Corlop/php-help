@@ -107,7 +107,7 @@ $result = preg_match($studentNumberPattern, $studentNumber );
 determine checkboxes */
 
 $checkCount = 0;
-
+print_r($_POST);
 if(   isset($_POST)  ){
 	echo "<p>You are:</p>";
 	$arrayOfDescriptions = $_POST;
