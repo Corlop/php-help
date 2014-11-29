@@ -110,7 +110,7 @@ $checkCount = 0;
 
 if(   isset($_POST)  ){
 	echo "<p>You are:</p>";
-	$arrayOfDescriptions = $_POST['self'];
+	$arrayOfDescriptions = $_POST['description'];
 	echo "<ul>";
 	foreach($arrayOfDescriptions as $oneDescription){
 	
