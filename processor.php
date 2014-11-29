@@ -104,7 +104,7 @@ $result = preg_match($studentNumberPattern, $studentNumber );
 
 /*
 ---------------------------------------------------------------------
-determine checkboxes */
+isset checks if there is an array in the form called description, if there is an array foreach splits um the array and post it. The loop creates checkcount 1 in the first loop and in the second checkcount 2 */
 
 $checkCount = 0;
 
