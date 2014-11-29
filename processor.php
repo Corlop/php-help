@@ -21,7 +21,7 @@ determine if the data exists: use isset( )
 if its not set, then the user did not use the HTML form!
 */
 
-if( isset($_POST['firstname']) && isset($_POST['lastname']) && isset($_POST['studentNumber']) ){
+if( isset($_POST['firstname']) && isset($_POST['lastname']) && isset($_POST['studentnumber']) ){
 	echo "<p>firstname/lastname/studentnumber is set!</p>";	
 }else{
 	echo "<p>firstname/lastname/studentnumber is NOT set.</p>";		
