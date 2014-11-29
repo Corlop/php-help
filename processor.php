@@ -57,7 +57,7 @@ if(trim($_POST['firstname']) && trim($_POST['lastname']) && trim($_POST['student
 /*remove leading and trailing spacebar spaces from form fields*/
 $firstname = trim($_POST['firstname']);
 $lastname = trim($_POST['lastname']);
-$studentNumber= trim($_POST['studentNumber']);
+$studentNumber= trim($_POST['studentnumber']);
 
 
 
